@@ -195,6 +195,11 @@ export const TotpPage = (): JSX.Element => {
         </Modal>
 
         <div className={styles.listContainer}>
+          {!items?.length && (
+            <div className={styles.emptyState}>
+              <p>No TOTP added yet</p>
+            </div>
+          )}
           <DragDropContext onDragEnd={onDragEnd}>
             <Droppable droppableId="droppable">
               {provided => (

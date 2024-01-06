@@ -1,7 +1,7 @@
 import { css } from 'styled-components'
 
 export const scrollMedium = css`
-  scrollbar-color: ${({ theme }) => null};
+  scrollbar-color: ${() => null};
 
   &::-webkit-scrollbar {
     width: 8px;
