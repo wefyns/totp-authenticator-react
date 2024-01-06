@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@400;600;800&family=Oswald:wght@700&family=Squada+One&display=swap');
+
+:root {
+  --red-secondary: #e2032b;
+  --button-text: #fff;
+
+  --text: #ffffff;
+
+  --background: #fff;
+  --background-secondary: #2e2e2e;
+
+  --white: #fff;
+
+  --text: #344054;
+
+  --border-checkbox: #d0d5dd;
+
+  --background-checkbox-active: var(--red-secondary);
+  --border-checkbox-active: var(--red-secondary);
+
+  --input-default-text: #101828;
+  --input-default-background: #ffffff;
+  --input-default-border: #d0d5dd;
+  --input-default-error: #e2032b;
+  --input-dafault-lable: #344054;
+
+  --select-default-bg: #ffffff;
+  --select-text-fill: #101828;
+  --select-multiValue-text: #344054;
+  --select-default-text: #101828;
+  --select-disabled-text: #344054;
+  --select-border-active: #101828;
+  --select-border-errorHover: #e2032b;
+  --select-border-hover: #101828;
+  --select-clearIcon: #101828;
+  --select-text-active: #101828;
+  --select-option-selected: #f2f4f7;
+  --select-option-hover: #d0d5dd;
+  --select-label-default: #101828;
+  --select-label-disabled: #344054;
+  --select-border-error: #e2032b;
+
+  --dropdown-item-bg: #a3b6cf9b;
+  --dropdown-bg-default: #ffffff;
+  --dropdown-text-default: #101828;
+
+  --roundbutton-bg: #e2032b;
+
+  --roundbutton-bg: #e2032b;
+
+  --alert-success-background: #2b7f43;
+  --alert-success-text: #fff;
+  --alert-success-loader: #2e2e2e;
+}
+
+[data-theme='dark'] {
+  --text: #ffffff;
+  --button-text: #fff;
+
+  --background: #121212;
+  --background-secondary: #2e2e2e;
+
+  --background-checkbox: var(--white);
+  --border-checkbox: #475467;
+  --text-checkbox: #eaecf0;
+  --background-checkbox-active: var(--red-secondary);
+  --border-checkbox-active: var(--red-secondary);
+  --check: var(--white);
+
+  --input-default-text: #ffffff;
+  --input-default-background: #101828;
+  --input-default-border: #475467;
+  --input-default-error: #ff002c;
+  --input-dafault-lable: #eaecf0;
+
+  --select-default-bg: #101828;
+  --select-text-fill: #ffffff;
+
+  --select-multiValue-text: #101828;
+  --select-default-text: #ffffff;
+  --select-disabled-text: #eaecf0;
+  --select-border-active: #ffffff;
+  --select-border-errorHover: #ff002c;
+  --select-border-hover: #ffffff;
+  --select-clearIcon: #ffffff;
+  --select-text-active: #ffffff;
+  --select-option-selected: #ffffff;
+  --select-option-hover: #ffffff;
+  --select-label-default: #ffffff;
+  --select-label-disabled: #eaecf0;
+  --select-border-error: #ff002c;
+
+  --dropdown-item-bg: #a3b6cf9b;
+  --dropdown-bg-default: #344054;
+  --dropdown-text-default: #ffffff;
+
+  --roundbutton-bg: #e2032b;
+
+  --alert-success-background: #2b7f43;
+  --alert-success-text: #fff;
+  --alert-success-loader: #2e2e2e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text);
+  font-family: Open Sans;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: var(--background);
+}
+
+input,
+button,
+text {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(var(--background-secondary) 0 60px, transparent 60px 100%);
+}
+@media (max-width: 630px) {
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(var(--background-secondary) 0 110px, transparent 110px 100%);
+  }
+}

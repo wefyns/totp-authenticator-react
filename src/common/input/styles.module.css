@@ -1,0 +1,112 @@
+.label {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0px 0px 6px;
+  color: var(--input-dafault-lable);
+}
+
+.inputWrapper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textArea {
+  flex: 1;
+  resize: none;
+  display: flex;
+  padding: 16px;
+  min-height: 122px;
+  border-radius: 16px;
+  outline: none;
+  color: var(--input-default-text);
+  border-color: var(--input-default-border);
+  background: var(--input-default-background);
+}
+
+.styledInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--input-default-text);
+  background-color: var(--input-default-background);
+}
+
+.paddingIcon {
+  padding-left: 48px;
+}
+
+.paddingRightIcon {
+  padding-right: 48px;
+}
+
+.leftIcon {
+  width: 24px;
+  right: 16px;
+  height: 24px;
+  position: absolute;
+}
+
+.rightIcon {
+  width: 24px;
+  right: 16px;
+  height: 24px;
+  position: absolute;
+}
+
+.Icon {
+  position: absolute;
+  right: 0px;
+  bottom: 12px;
+}
+
+.IconEyes {
+  right: 16px;
+  z-index: 10;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.ErrorContainer {
+  position: relative;
+}
+
+.Error {
+  position: absolute;
+  top: 4px;
+  font-size: 10px;
+  font-style: italic;
+  padding: 0px 0px 8px;
+  color: var(--input-default-error);
+}
+
+.borderInput {
+  border-color: var(--input-default-border);
+  border: 1px solid var(--input-default-border);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.styledInput:disabled {
+  opacity: 0.5;
+  transition: 0.25s ease-in;
+}
+
+.isError {
+  color: var(--input-default-error);
+}

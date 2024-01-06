@@ -1,0 +1,14 @@
+.blockPicture {
+	width: 3em;
+	height: 3em;
+	object-fit: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgStyle {
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+}

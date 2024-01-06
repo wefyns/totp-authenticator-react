@@ -1,0 +1,32 @@
+.Text {
+	color: var(--select-multiValue-text);
+}
+
+.MultiValue {
+  height: 28px;
+  padding: 0 2px 0 8px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.MultiValue div[role='button'] {
+  padding-left: 0px;
+  background-color: transparent;
+}
+
+.MultiValue div[role='button']:hover {
+  background-color: transparent;
+}
+
+.MultiValue div[role='button']:active {
+  background-color: transparent;
+}
+
+.MultiValue div[role='button'] svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--select-multiValue-text);
+}

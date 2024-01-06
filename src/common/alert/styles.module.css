@@ -1,0 +1,90 @@
+.alert-wrapper {
+  position: fixed;
+  top: 50px; /* Adjust this value based on your header/nav bar height */
+  right: 20px; /* Space from the right edge of the screen */
+  z-index: 1000; /* Ensure alerts are above other elements */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align alerts to the right */
+  gap: 10px; /* Space between individual alerts */
+}
+
+.alertContainer {
+  position: relative;
+  display: flex;
+  padding: 20px 15px 24px 20px;
+  margin-top: 24px;
+  margin-right: 100px;
+  border-radius: 4px;
+  pointer-events: all;
+  background-color: var(--alert-success-background);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.37);
+  z-index: 100;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textContainer {
+  white-space: break-spaces;
+  color: var(--alert-success-text);
+  margin-right: 46px;
+}
+
+.iconContainer {
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingLine {
+  height: 5px;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: loadingAnimation 5.03s linear;
+}
+
+.success {
+  background-color: var(--alert-success-loader);
+}
+
+.error {
+  background-color: red;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .alertContainer {
+    margin-left: 0px;
+    margin-right: 16px;
+  }
+}

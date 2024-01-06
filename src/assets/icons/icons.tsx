@@ -1,0 +1,6 @@
+export { AddCircle } from './add-circle'
+export { CheckCircle } from './check-circle'
+export { Edit } from './edit'
+export { Menu } from './menu'
+export { Reorder } from './reorder'
+export { Close } from './close'

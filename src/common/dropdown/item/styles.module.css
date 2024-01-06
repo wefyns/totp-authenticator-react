@@ -1,0 +1,10 @@
+.item {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.item:hover {
+  background-color: var(--dropdown-item-bg);
+}

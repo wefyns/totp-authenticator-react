@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  border-radius: 5px;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown.open + .content {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: var(--dropdown-bg-default);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  animation: 0.2s slide;
+  color: var(--dropdown-text-default);
+}
+
+.content {
+  display: none;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

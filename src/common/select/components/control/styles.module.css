@@ -1,0 +1,7 @@
+.SearchContainer {
+  margin-left: 12px;
+}
+
+.SearchContainer path {
+	fill: var(--select-text-fill);
+}

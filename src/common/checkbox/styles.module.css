@@ -1,0 +1,97 @@
+.checkboxLabel {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  gap: 11px;
+}
+
+.checkboxInput {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkboxLabel::before,
+.checkboxLabelBlock::before {
+  content: '';
+  position: relative;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--border-checkbox);
+}
+
+path,
+rect {
+  fill: #fff;
+}
+
+.checkMark {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.checkboxText {
+  color: var(--text-checkbox);
+}
+
+.checkboxLabelBlock {
+  height: 40px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid var(--border-checkbox-active);
+  gap: 11px;
+}
+
+.checkboxInput:checked + .checkMark {
+  opacity: 1;
+  border-radius: 6px;
+  background-color: var(--border-checkbox-active);
+}
+
+.checkboxTextBlock {
+  color: var(--text-checkbox);
+}
+
+.checkboxTextBlock:active {
+  background-color: var(--border-checkbox-active);
+}
+
+.checkboxLabelBlock::before:active {
+  background-color: var(--border-checkbox-active);
+}
+
+.checkboxTextBlock:hover {
+  background-color: var(--border-checkbox);
+}
+
+.disabledLabel {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.additionalLabelClass {
+  flex-direction: row-reverse;
+}
