@@ -45,11 +45,14 @@ export const TotpPage = (): JSX.Element => {
   useEffect(() => {
     const storedTotp = JSON.parse(localStorage.getItem('totps') ?? '[]')
     setItems(storedTotp)
+
+    refreshTotps(storedTotp)
   }, [])
 
-  const refreshTotps = (): void => {
+  const refreshTotps = (specificItems?: Totp[]): void => {
+    const data = specificItems && specificItems?.length > 0 ? specificItems : items
     setItems(
-      items.map(item => ({
+      data.map(item => ({
         ...item,
         currentOTP: generateTotp({ label: item.label, secret: item.secret }).currentOTP,
       }))
